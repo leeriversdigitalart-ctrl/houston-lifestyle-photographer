@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lifestyle Photographer Houston TX | Documentary Style | Lee Rivers Digital Art</title>
+  <meta name="description" content="Houston's documentary lifestyle photographer. Authentic, candid sessions for couples, portraits, families, personal branding, and Houston run clubs. Real moments. No posing." />
+  <meta name="keywords" content="lifestyle photographer Houston TX, documentary photographer Houston TX, candid lifestyle photography Houston, run club photographer Houston TX, couples lifestyle photographer Houston, personal branding photographer Houston TX, family lifestyle photographer Houston TX, outdoor lifestyle photographer Houston" />
+  <meta property="og:title" content="Lifestyle Photographer Houston TX | Lee Rivers Digital Art" />
+  <meta property="og:description" content="Documentary lifestyle photography in Houston TX — couples, portraits, families, personal branding & run clubs. Real moments, beautifully captured." />
+  <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/1779897846855-7Y5OP8SG8D3CA1GINVKK/ZFT_EastRiver-200.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:    #0a0a0a;
+      --offblack: #111111;
+      --dark:     #1a1a1a;
+      --mid:      #555555;
+      --light:    #f5f5f5;
+      --white:    #ffffff;
+      --gold:     #c9a96e;
+      --serif:    'Cormorant Garamond', Georgia, serif;
+      --sans:     'Inter', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); background: var(--white); color: var(--dark); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    img  { display: block; width: 100%; height: 100%; object-fit: cover; }
+    a    { text-decoration: none; color: inherit; }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 56px;
+      background: rgba(10,10,10,0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .nav-logo img { height: 36px; width: auto; object-fit: contain; filter: invert(1); }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.72); font-size: 11px; font-weight: 500; letter-spacing: .13em; text-transform: uppercase; transition: color .2s; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta { background: var(--gold); color: var(--black) !important; padding: 8px 20px; border-radius: 2px; font-weight: 600 !important; }
+    .nav-cta:hover { opacity: .88; }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative; height: 100vh; min-height: 660px;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden; background: var(--black);
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/1779897846855-7Y5OP8SG8D3CA1GINVKK/ZFT_EastRiver-200.jpg');
+      background-size: cover;
+      /* FIX 1: Shifted up to reveal runners — higher % shows more of the image bottom */
+      background-position: center 65%;
+      opacity: 0.45;
+    }
+    .hero-content { position: relative; text-align: center; padding: 0 24px; max-width: 820px; }
+    .eyebrow { display: inline-block; font-size: 11px; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
+    .hero h1 { font-family: var(--serif); font-size: clamp(2.8rem,6vw,5.2rem); font-weight: 300; color: var(--white); line-height: 1.1; margin-bottom: 22px; }
+    .hero h1 em { font-style: italic; color: var(--gold); }
+    .hero p { font-size: 1.05rem; color: rgba(255,255,255,0.7); max-width: 520px; margin: 0 auto 38px; line-height: 1.8; }
+    .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: var(--gold); color: var(--black); padding: 14px 34px; font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; border-radius: 2px; transition: opacity .2s, transform .2s; }
+    .btn-primary:hover { opacity: .87; transform: translateY(-1px); }
+    .btn-outline { border: 1px solid rgba(255,255,255,.35); color: var(--white); padding: 14px 34px; font-size: 12px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; border-radius: 2px; transition: border-color .2s; }
+    .btn-outline:hover { border-color: var(--gold); }
+    .scroll-hint { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,.35); font-size: 10px; letter-spacing: .18em; text-transform: uppercase; display: flex; flex-direction: column; align-items: center; gap: 8px; animation: bob 2.2s infinite; }
+    .scroll-hint::after { content:''; width:1px; height:34px; background:rgba(255,255,255,.2); }
+    @keyframes bob { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(6px)} }
+
+    /* ── TRUST BAR ── */
+    .trust { background: var(--offblack); padding: 20px 56px; display: flex; align-items: center; justify-content: center; gap: 52px; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,.5); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; font-weight: 500; }
+    .trust-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+
+    /* ── SECTIONS ── */
+    section { padding: 96px 56px; }
+    .sec-label { font-size: 11px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+    .sec-title { font-family: var(--serif); font-size: clamp(2rem,4vw,3rem); font-weight: 300; color: var(--dark); line-height: 1.2; margin-bottom: 18px; }
+    .sec-sub { font-size: 1rem; color: var(--mid); max-width: 540px; line-height: 1.85; }
+    .gold-rule { width: 48px; height: 2px; background: var(--gold); margin: 20px 0; }
+
+    /* ── SERVICES ── */
+    .services { background: var(--light); }
+    .services-wrap { max-width: 1200px; margin: 0 auto; }
+    .services-head { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: end; margin-bottom: 56px; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2px; }
+    .svc-card { background: var(--white); padding: 40px 32px; border-top: 3px solid transparent; transition: border-color .25s, transform .25s, box-shadow .25s; }
+    .svc-card:hover { border-color: var(--gold); transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0,0,0,.07); }
+    .svc-icon { font-size: 26px; margin-bottom: 16px; }
+    .svc-card h3 { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; margin-bottom: 10px; }
+    .svc-card p { font-size: .88rem; color: var(--mid); line-height: 1.78; }
+
+    /* ── RUN CLUB FEATURE ── */
+    .runclub { background: var(--black); display: grid; grid-template-columns: 1fr 1fr; min-height: 560px; }
+    .rc-images { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3px; overflow: hidden; }
+    .rc-img { overflow: hidden; }
+    .rc-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+    .rc-img:hover img { transform: scale(1.04); }
+    .rc-text { padding: 56px 64px; display: flex; flex-direction: column; justify-content: center; }
+    .rc-text-img { margin-top: 32px; overflow: hidden; border-radius: 2px; height: 180px; }
+    .rc-text-img img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; transition: transform .5s; }
+    .rc-text-img:hover img { transform: scale(1.03); }
+    .rc-text .sec-label { color: var(--gold); }
+    .rc-text .sec-title { color: var(--white); }
+    .rc-text p { color: rgba(255,255,255,.62); font-size: .97rem; line-height: 1.85; margin-bottom: 14px; }
+    .rc-clubs { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 32px; }
+    .club-tag { background: rgba(201,169,110,.12); border: 1px solid rgba(201,169,110,.3); color: var(--gold); font-size: 11px; font-weight: 500; letter-spacing: .08em; padding: 6px 14px; border-radius: 20px; }
+
+    /* ── GALLERY ── */
+    .gallery-wrap { padding: 96px 0; background: var(--white); }
+    .gallery-head { padding: 0 56px; margin-bottom: 44px; }
+    .masonry { display: grid; grid-template-columns: repeat(12,1fr); gap: 4px; }
+
+    /* FIX 2: All gallery items — overflow hidden so object-position crops correctly */
+    .m-item { overflow: hidden; position: relative; }
+    .m-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Default — centered on subject */
+      object-position: center 30%;
+      transition: transform .5s;
+    }
+    .m-item:hover img { transform: scale(1.04); }
+
+    /* Individual overrides — positioned per image content */
+    .m1 { grid-column: 1/5;  height: 440px; }
+    .m1 img { object-position: center 5%; }    /* Proposal — shifted down to get both heads in frame */
+
+    .m2 { grid-column: 5/9;  height: 440px; }
+    .m2 img { object-position: center 45%; }   /* SuChen — moved up, shows more of subject */
+
+    .m3 { grid-column: 9/13; height: 440px; }
+    .m3 img { object-position: center 40%; }   /* Runners — mid-frame action */
+
+    .m4 { grid-column: 1/4;  height: 340px; }
+    .m4 img { object-position: center 20%; }   /* Portrait — face centered */
+
+    .m5  { grid-column: 4/7;  height: 340px; }
+    .m5 img  { object-fit: cover; object-position: center 40%; }  /* Family — cover, centered on action */
+
+    .m5b { grid-column: 7/10; height: 340px; }
+    .m5b img { object-position: center 15%; }  /* New portrait — face centered */
+
+    .m6 { grid-column: 10/13; height: 340px; }
+    .m6 img { object-position: center 15%; }   /* Janise — tight on face */
+
+    /* ── APPROACH ── */
+    .approach { background: var(--light); }
+    .approach-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; max-width: 1200px; margin: 0 auto; }
+    .approach-img { overflow: hidden; border-radius: 2px; height: 560px; }
+    .approach-img img { object-position: center 20%; }
+    .approach-text .gold-rule { margin-bottom: 24px; }
+    .approach-text p { font-size: .97rem; color: var(--mid); line-height: 1.88; margin-bottom: 14px; }
+    .pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 28px 0 36px; }
+    .pillar { border-left: 2px solid var(--gold); padding-left: 14px; }
+    .pillar strong { display: block; font-size: .85rem; font-weight: 600; color: var(--dark); margin-bottom: 4px; }
+    .pillar span { font-size: .82rem; color: var(--mid); }
+
+    /* ── CTA ── */
+    .cta-section {
+      background: var(--offblack);
+      background-image: url('https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/1747050770069-08YM672ECHNSAR9Y2CD7/ZFT+Race+Day+at+Daikin+Park-41.jpg');
+      background-size: cover; background-position: center 60%; background-attachment: fixed;
+      position: relative; padding: 120px 56px; text-align: center;
+    }
+    .cta-section::before { content:''; position:absolute; inset:0; background:rgba(10,10,10,.82); }
+    .cta-inner { position: relative; max-width: 660px; margin: 0 auto; }
+    .cta-section .sec-label, .cta-section .sec-title { text-align: center; }
+    .cta-section .sec-title { color: var(--white); margin-bottom: 18px; }
+    .cta-section p { color: rgba(255,255,255,.62); margin-bottom: 42px; font-size: 1rem; line-height: 1.82; }
+    .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    /* ── CONTACT STRIP ── */
+    .contact-strip { background: var(--light); padding: 52px 56px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 28px; }
+    .contact-item { display: flex; align-items: center; gap: 14px; }
+    .contact-icon { width: 42px; height: 42px; border-radius: 50%; background: var(--black); display: flex; align-items: center; justify-content: center; font-size: 17px; flex-shrink: 0; }
+    .contact-label { font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--mid); margin-bottom: 2px; }
+    .contact-value { font-size: .93rem; font-weight: 600; color: var(--dark); }
+
+    /* ── FOOTER ── */
+    footer { background: var(--black); padding: 46px 56px 28px; }
+    .footer-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; padding-bottom: 28px; border-bottom: 1px solid rgba(255,255,255,.07); }
+    .footer-logo img { height: 30px; width: auto; filter: invert(1); opacity: .75; }
+    .footer-links { display: flex; gap: 26px; list-style: none; }
+    .footer-links a { color: rgba(255,255,255,.4); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; transition: color .2s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { margin-top: 26px; text-align: center; font-size: 11px; color: rgba(255,255,255,.22); letter-spacing: .04em; }
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:900px){
+      nav { padding: 15px 20px; }
+      .nav-links { display: none; }
+      section { padding: 64px 20px; }
+      .services-head { grid-template-columns: 1fr; }
+      .runclub { grid-template-columns: 1fr; }
+      .rc-images { height: 300px; }
+      .rc-text { padding: 48px 24px; }
+      .approach-grid { grid-template-columns: 1fr; }
+      .approach-img { height: 320px; }
+      .m1,.m2 { grid-column: 1/7; height: 260px; }
+      .m3     { grid-column: 7/13; height: 260px; }
+      .m4,.m5  { grid-column: 1/7;  height: 220px; }
+      .m5b,.m6 { grid-column: 7/13; height: 220px; }
+      .trust { padding: 18px 20px; gap: 20px; }
+      .contact-strip { padding: 36px 20px; }
+      footer { padding: 36px 20px 20px; }
+      .cta-section { padding: 72px 20px; background-attachment: scroll; }
+      .pillars { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">
+      <img src="https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/a254b594-b0b3-4298-8363-22307c35d6cd/Lee-Rivers_black_high-res.png?format=1500w" alt="Lee Rivers Digital Art" />
+    </div>
+    <ul class="nav-links">
+      <li><a href="#sessions">Sessions</a></li>
+      <li><a href="#runclub">Run Clubs</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="https://www.leeriversdigitalart.com/" target="_blank">Main Site</a></li>
+      <li><a href="https://forms.gle/7vLqgYg5Mn2J484h8" target="_blank" class="nav-cta">Book a Session</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="eyebrow">Documentary Lifestyle Photography · Houston, TX</span>
+      <h1>Real Moments.<br /><em>No Posing. No Performance.</em></h1>
+      <p>Authentic, candid lifestyle photography for couples, families, portraits, personal branding, and Houston's run club community. Your story, told honestly.</p>
+      <div class="hero-btns">
+        <a href="https://forms.gle/7vLqgYg5Mn2J484h8" target="_blank" class="btn-primary">Book a Session</a>
+        <a href="#gallery" class="btn-outline">View Gallery</a>
+      </div>
+    </div>
+    <div class="scroll-hint">Scroll</div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust">
+    <div class="trust-item"><span class="trust-dot"></span>Documentary Style</div>
+    <div class="trust-item"><span class="trust-dot"></span>PPA Member Photographer</div>
+    <div class="trust-item"><span class="trust-dot"></span>Houston Run Club Photographer</div>
+    <div class="trust-item"><span class="trust-dot"></span>Couples &amp; Portraits</div>
+    <div class="trust-item"><span class="trust-dot"></span>Personal Branding</div>
+    <div class="trust-item"><span class="trust-dot"></span>Houston TX &amp; Greater Metro</div>
+  </div>
+
+  <!-- SESSIONS -->
+  <section class="services" id="sessions">
+    <div class="services-wrap">
+      <div class="services-head">
+        <div>
+          <div class="sec-label">What I Shoot</div>
+          <h2 class="sec-title">Lifestyle Sessions Built Around You</h2>
+        </div>
+        <p class="sec-sub">Every session is unscripted. I follow your lead, document what's real, and deliver images that look like your life — not a catalog.</p>
+      </div>
+      <div class="services-grid">
+        <div class="svc-card">
+          <div class="svc-icon">🏃</div>
+          <h3>Run Club &amp; Active Lifestyle</h3>
+          <p>Photographing Houston's run club community — race days, group runs, finisher moments, and the culture behind the miles. If your club runs it, I'll document it.</p>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon">💛</div>
+          <h3>Couples &amp; Proposals</h3>
+          <p>Anniversary sessions, surprise proposals, and engagement shoots captured as they happen — candid, emotional, and entirely you. No matching outfits required.</p>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon">🎨</div>
+          <h3>Portraits &amp; Personal Branding</h3>
+          <p>Lifestyle portraits and personal branding sessions for entrepreneurs, creatives, and professionals who want images that reflect the real person behind the business.</p>
+        </div>
+        <div class="svc-card">
+          <div class="svc-icon">👨‍👩‍👧</div>
+          <h3>Families &amp; Small Groups</h3>
+          <p>Documentary family sessions that capture the chaos, love, and connection that make your family yours. Relaxed, fun, and full of real moments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RUN CLUB FEATURE -->
+  <div class="runclub" id="runclub">
+    <div class="rc-images">
+      <!-- Row 1: blue singlet + 2 new images beside it -->
+      <div class="rc-img">
+        <img src="https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/1779897742022-U855VUHKKM4QJITG2FT7/ZFTxChampsxNike-131.jpg"
+             alt="Houston run club photographer — ZFT runner blue singlet"
+             style="object-position: center 35%;" loading="lazy" />
+      </div>
+      <div class="rc-img">
+        <img src="./ZFT_EastRiver-106.jpg"
+             alt="ZFT East River run club Houston — group run documentary photography"
+             style="object-position: center 30%;" loading="lazy" />
+      </div>
+      <div class="rc-img">
+        <img src="./ZFT_EastRiver-229.jpg"
+             alt="Houston run club photographer — runner walking through gauntlet of high fives"
+             style="object-position: center 20%;" loading="lazy" />
+      </div>
+      <!-- Row 2 -->
+      <div class="rc-img">
+        <img src="./Boulderthon-17.jpg"
+             alt="ZFT Run Club Houston — Boulderthon race day photography"
+             style="object-position: center 25%;" loading="lazy" />
+      </div>
+      <div class="rc-img">
+        <img src="https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/1747050770069-08YM672ECHNSAR9Y2CD7/ZFT+Race+Day+at+Daikin+Park-41.jpg"
+             alt="Race day photographer Houston TX — Daikin Park"
+             style="object-position: center 40%;" loading="lazy" />
+      </div>
+      <div class="rc-img">
+        <img src="https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/1779897738494-6BW94DOLUNWXGK20XXQR/ZFTxChampsxNike-152.jpg"
+             alt="Houston running group photographer — ZFT x Champs x Nike"
+             style="object-position: center 35%;" loading="lazy" />
+      </div>
+    </div>
+    <div class="rc-text">
+      <div class="sec-label">Run Club Photography</div>
+      <h2 class="sec-title">Houston's Run Club Photographer</h2>
+      <div class="gold-rule"></div>
+      <p>Houston has one of the most active running communities in the country — over 40 clubs under the HARRA umbrella, from weekend warriors to serious competitors. I've been there on race days, group runs, and finish lines, documenting the energy, grit, and community that make these clubs special.</p>
+      <p>Whether you need coverage for a race event, a club group shoot, or individual runner lifestyle portraits — I bring the same documentary eye that makes every shot feel real.</p>
+      <div class="rc-clubs">
+        <span class="club-tag">ZFT Run Club</span>
+        <span class="club-tag">Run Houston</span>
+        <span class="club-tag">HARRA Events</span>
+        <span class="club-tag">Race Day Coverage</span>
+        <span class="club-tag">Group Run Photography</span>
+        <span class="club-tag">5K &amp; 10K Events</span>
+      </div>
+      <a href="https://forms.gle/7vLqgYg5Mn2J484h8" target="_blank" class="btn-primary">Book Run Club Coverage</a>
+      <div class="rc-text-img">
+        <img src="./Boulderthon-151.jpg"
+             alt="Houston run club photography — ZFT runners celebrating with medals after race" loading="lazy"
+             style="object-position: center top;" />
+      </div>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <div class="gallery-wrap" id="gallery">
+    <div class="gallery-head">
+      <div class="sec-label">Portfolio</div>
+      <h2 class="sec-title">Life as It Happens</h2>
+    </div>
+    <div class="masonry">
+      <div class="m-item m1">
+        <img src="https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/1780101070073-KP5REYZ3Q7NNZD80PMCJ/Proposal-1.jpg"
+             alt="Couples photographer Houston TX — surprise proposal" loading="lazy" />
+      </div>
+      <div class="m-item m2">
+        <img src="https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/1780100949431-2NBNRSA7OOTM8CORI5V6/SuChen-9.jpg"
+             alt="Portrait photographer Houston TX — lifestyle portrait" loading="lazy" />
+      </div>
+      <div class="m-item m3">
+        <img src="https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/1779897846855-7Y5OP8SG8D3CA1GINVKK/ZFT_EastRiver-200.jpg"
+             alt="Run club photographer Houston TX — ZFT East River run" loading="lazy" />
+      </div>
+      <div class="m-item m4">
+        <img src="https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/1780100847564-C0UCXGN8AW4KN8DFV00K/Alon-10.jpg"
+             alt="Lifestyle portrait photographer Houston — candid portrait" loading="lazy" />
+      </div>
+      <div class="m-item m5">
+        <img src="https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/1780101134378-J50G6CRPRZPGD2TM3USL/FamilyPhotos-4.jpg"
+             alt="Family lifestyle photographer Houston TX — documentary family session" loading="lazy" />
+      </div>
+      <div class="m-item m5b">
+        <img src="https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/1747050946921-ABM46XLX5V5CYOOPD626/RIV08860.JPG"
+             alt="Portrait lifestyle photographer Houston TX — candid documentary portrait" loading="lazy" />
+      </div>
+      <div class="m-item m6">
+        <img src="https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/1780101007289-CK5IQIX3NE5PFXESU6HT/Janise-4.jpg"
+             alt="Personal branding photographer Houston TX — lifestyle session" loading="lazy" />
+      </div>
+    </div>
+  </div>
+
+  <!-- APPROACH -->
+  <section class="approach" id="about">
+    <div class="approach-grid">
+      <div class="approach-img">
+        <img src="https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/1780100867031-9N1N9HUOWF01698EYMQR/Rivers-3.jpg"
+             alt="Lee Rivers — Houston documentary lifestyle photographer" loading="lazy" />
+      </div>
+      <div class="approach-text">
+        <div class="sec-label">The Approach</div>
+        <h2 class="sec-title">Documentary. Candid. Honest.</h2>
+        <div class="gold-rule"></div>
+        <p>I'm Lee Rivers — a Houston-based documentary lifestyle photographer and PPA member. My approach is simple: I show up, I observe, and I capture what's actually happening. No posing, no forced smiles, no awkward "look over here" moments.</p>
+        <p>Whether I'm on the sidelines of a run club race in 90-degree Houston heat or watching a couple in their natural element, my job is to disappear into the background and let the real story unfold.</p>
+        <div class="pillars">
+          <div class="pillar"><strong>No posing</strong><span>Directed only when needed — real over rehearsed</span></div>
+          <div class="pillar"><strong>Documentary eye</strong><span>I find the story in every scene</span></div>
+          <div class="pillar"><strong>Fast delivery</strong><span>Gallery ready within 48–72 hours</span></div>
+          <div class="pillar"><strong>PPA certified</strong><span>Professional Photographers of America member</span></div>
+        </div>
+        <a href="https://www.leeriversdigitalart.com/" target="_blank" class="btn-primary" style="display:inline-block;">Full Portfolio &amp; About</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <div class="sec-label">Ready to Book?</div>
+      <h2 class="sec-title">Let's Capture Your Story</h2>
+      <p>Whether you're a run club looking for race day coverage, a couple wanting something real, or a business owner who needs images that actually look like you — I'd love to hear about your session.</p>
+      <div class="cta-btns">
+        <a href="https://forms.gle/7vLqgYg5Mn2J484h8" target="_blank" class="btn-primary">Book a Session</a>
+        <a href="https://www.leeriversdigitalart.com/portfolio" target="_blank" class="btn-outline">View Full Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT STRIP -->
+  <div class="contact-strip">
+    <div class="contact-item">
+      <div class="contact-icon">📷</div>
+      <div><div class="contact-label">Studio</div><div class="contact-value">Lee Rivers Digital Art</div></div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">📍</div>
+      <div><div class="contact-label">Location</div><div class="contact-value">Houston, TX &amp; Greater Metro</div></div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">📸</div>
+      <div><div class="contact-label">Instagram</div><div class="contact-value"><a href="https://www.instagram.com/leeriversphoto" target="_blank">@leeriversphoto</a></div></div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-icon">✉️</div>
+      <div><div class="contact-label">Bookings</div><div class="contact-value"><a href="https://forms.gle/7vLqgYg5Mn2J484h8" target="_blank" style="color:var(--gold)">Submit Inquiry Form</a></div></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-row">
+      <div class="footer-logo">
+        <img src="https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/a254b594-b0b3-4298-8363-22307c35d6cd/Lee-Rivers_black_high-res.png?format=1500w" alt="Lee Rivers Digital Art" />
+      </div>
+      <ul class="footer-links">
+        <li><a href="#sessions">Sessions</a></li>
+        <li><a href="#runclub">Run Clubs</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="https://www.leeriversdigitalart.com/" target="_blank">Main Site</a></li>
+        <li><a href="https://forms.gle/7vLqgYg5Mn2J484h8" target="_blank">Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-copy">&copy; 2026 Lee Rivers Digital Art · Houston, TX · Documentary Lifestyle Photographer · All Rights Reserved</div>
+  </footer>
+
+</body>
+</html>
