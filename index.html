@@ -104,7 +104,12 @@
 
     /* ── RUN CLUB FEATURE ── */
     .runclub { background: var(--black); display: grid; grid-template-columns: 1fr 1fr; min-height: 560px; }
-    .rc-images { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3px; overflow: hidden; }
+    .rc-images { display: grid; grid-template-columns: repeat(6, 1fr); grid-template-rows: 1fr 1fr; gap: 3px; overflow: hidden; }
+    .rc-img:nth-child(1) { grid-column: 1 / 3; }
+    .rc-img:nth-child(2) { grid-column: 3 / 5; }
+    .rc-img:nth-child(3) { grid-column: 5 / 7; }
+    .rc-img:nth-child(4) { grid-column: 1 / 4; }
+    .rc-img:nth-child(5) { grid-column: 4 / 7; }
     .rc-img { overflow: hidden; }
     .rc-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
     .rc-img:hover img { transform: scale(1.04); }
@@ -234,6 +239,7 @@
       <li><a href="#runclub">Run Clubs</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
       <li><a href="https://www.leeriversdigitalart.com/" target="_blank">Main Site</a></li>
       <li><a href="https://forms.gle/7vLqgYg5Mn2J484h8" target="_blank" class="nav-cta">Book a Session</a></li>
     </ul>
@@ -302,37 +308,32 @@
   <!-- RUN CLUB FEATURE -->
   <div class="runclub" id="runclub">
     <div class="rc-images">
-      <!-- Row 1: blue singlet + 2 new images beside it -->
+      <!-- Row 1: 3 equal columns -->
       <div class="rc-img">
-        <img src="https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/1779897742022-U855VUHKKM4QJITG2FT7/ZFTxChampsxNike-131.jpg"
-             alt="Houston run club photographer — ZFT runner blue singlet"
-             style="object-position: center 35%;" loading="lazy" />
-      </div>
-      <div class="rc-img">
-        <img src="./ZFT_EastRiver-106.jpg"
-             alt="ZFT East River run club Houston — group run documentary photography"
+        <img src="ZFT_EastRiver-106.jpg"
+             alt="ZFT East River run club Houston — runners in action"
              style="object-position: center 30%;" loading="lazy" />
       </div>
       <div class="rc-img">
-        <img src="./ZFT_EastRiver-229.jpg"
-             alt="Houston run club photographer — runner walking through gauntlet of high fives"
-             style="object-position: center 20%;" loading="lazy" />
-      </div>
-      <!-- Row 2 -->
-      <div class="rc-img">
-        <img src="./Boulderthon-17.jpg"
-             alt="ZFT Run Club Houston — Boulderthon race day photography"
+        <img src="Boulderthon-17.jpg"
+             alt="ZFT Run Club Houston — Boulderthon race day"
              style="object-position: center 25%;" loading="lazy" />
       </div>
       <div class="rc-img">
-        <img src="https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/1747050770069-08YM672ECHNSAR9Y2CD7/ZFT+Race+Day+at+Daikin+Park-41.jpg"
-             alt="Race day photographer Houston TX — Daikin Park"
+        <img src="ZFT-Anniversary5K-191.jpg"
+             alt="ZFT Houston Anniversary 5K — runner in red ZFT jersey"
+             style="object-position: center 20%;" loading="lazy" />
+      </div>
+      <!-- Row 2: 2 wider columns -->
+      <div class="rc-img">
+        <img src="ZFT-RaceDay-125.jpg"
+             alt="ZFT Run Club Houston — race day team group photo"
              style="object-position: center 40%;" loading="lazy" />
       </div>
       <div class="rc-img">
-        <img src="https://images.squarespace-cdn.com/content/v1/658e525c6f3fe00284fcaaad/1779897738494-6BW94DOLUNWXGK20XXQR/ZFTxChampsxNike-152.jpg"
-             alt="Houston running group photographer — ZFT x Champs x Nike"
-             style="object-position: center 35%;" loading="lazy" />
+        <img src="GlobalRunDay-147.jpg"
+             alt="Global Running Day Houston — run club community celebration"
+             style="object-position: center 30%;" loading="lazy" />
       </div>
     </div>
     <div class="rc-text">
@@ -351,9 +352,9 @@
       </div>
       <a href="https://forms.gle/7vLqgYg5Mn2J484h8" target="_blank" class="btn-primary">Book Run Club Coverage</a>
       <div class="rc-text-img">
-        <img src="./Boulderthon-151.jpg"
+        <img src="Boulderthon-151.jpg"
              alt="Houston run club photography — ZFT runners celebrating with medals after race" loading="lazy"
-             style="object-position: center top;" />
+             style="object-position: center 43%;" />
       </div>
     </div>
   </div>
